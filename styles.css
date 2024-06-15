@@ -1,0 +1,202 @@
+html {
+    font-size: 16px;
+    /* Base font size for desktops */
+}
+
+body {
+    font-family: 'DM Serif text', serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    /* Light background color for the body */
+}
+
+.container {
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.image-wrapper img {
+    border-radius: 15px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow to the image */
+}
+
+.title {
+    font-size: 2.25rem;
+    color: #6b3a1a;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.125rem;
+    /* Font size relative to base */
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: #ffe6f0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.info-box h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #6b3a1a;
+    letter-spacing: 1px;
+}
+
+.info-box li::marker {
+    color: #6b3a1a;
+}
+
+.prep-list {
+    padding-left: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info-box li {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.ingredients-box {
+    margin: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ingredients-box h2 {
+    font-size: 1.75rem;
+    color: #6b3a1a;
+    letter-spacing: 1px;
+}
+
+.ingredients-box li {
+    margin-top: 10px;
+}
+
+.divider-main {
+    margin: 20px 0;
+}
+
+.divider-small {
+    margin: 10px 0;
+}
+
+.instructions-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.instructions-box h2 {
+    font-size: 1.75rem;
+    color: #6b3a1a;
+    letter-spacing: 1px;
+}
+
+.instructions-box li {
+    margin: 15px 0;
+}
+
+.nutrition-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.nutrition-section h2 {
+    font-size: 1.75rem;
+    color: #6b3a1a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.nutrition-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    font-size: 1rem;
+    color: #6b3a1a;
+    font-weight: normal;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nutrition-table td strong {
+    color: #6b3a1a;
+    font-weight: bold;
+}
+
+/* Hover effects */
+.instructions-box li:hover,
+.info-box li:hover,
+.ingredients-box li:hover {
+    background-color: #ffe6f0;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .info-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .ingredients-box h2,
+    .instructions-box h2,
+    .nutrition-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .nutrition-description,
+    .nutrition-table th,
+    .nutrition-table td {
+        font-size: 0.875rem;
+    }
+}
